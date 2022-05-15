@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>
+            Calcutor program
+        </title>
+    </head>
+    <style>
+        .content{
+            max-width: 600px;
+            margin: auto;
+            /* background-color: rgb(150, 97, 117); */
+        }
+        input[type=button]{
+            background-color: #06a96d;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+        }
+    </style>
+    
+    <body style="background-color: rgb(203, 46, 62);">
+        <div class="content">
+             <h2>Number1 :</h2>
+                <input type="text" placeholder="Enter Number" id="num1" required>
+             
+             <h2>Number2:</h2>
+                <input type="text" placeholder="Enter Number" id="num2" required>
+            
+            <br><br>
+            <input type="button" value="Add" onclick="addNumber()">
+            <input type="button" value="Mul" onclick="Multiply()">
+            <input type="button" value="Subtract" onclick="Sub()">
+            <input type="button" value="Devide" onclick="Devide()">
+            <input type="button" value="Modulo" onclick="Modulo()"><br><br>
+             <h2>Result:</h2>
+                <input type="text" id="res">
+            
+        </div>
+        <script>
+             function addNumber()
+            {
+                var x1 = parseInt(document.getElementById("num1").value);
+                var x2 = parseInt(document.getElementById("num2").value);
+                var x = x1+x2;
+                document.getElementById("res").value=x;
+              //   <!-- document.write("x1+x2"); -->
+      
+            }
+            function Multiply()
+            {
+                var x1 = parseInt(document.getElementById("num1").value);
+                var x2 = parseInt(document.getElementById("num2").value);
+                var x = x1*x2;
+                document.getElementById("res").value=x;
+              //   <!-- document.write("x1+x2"); -->
+      
+            }
+            function Sub()
+            {
+                var x1 = parseInt(document.getElementById("num1").value);
+                var x2 = parseInt(document.getElementById("num2").value);
+                var x = x1-x2;
+                document.getElementById("res").value=x;
+              //   <!-- document.write("x1+x2"); -->
+      
+            }
+            function Devide()
+            {
+                var x1 = parseInt(document.getElementById("num1").value);
+                var x2 = parseInt(document.getElementById("num2").value);
+                var x = x1/x2;
+                document.getElementById("res").value=x;
+              //   <!-- document.write("x1+x2"); -->
+      
+            }
+            function Modulo()
+            {
+                var x1 = parseInt(document.getElementById("num1").value);
+                var x2 = parseInt(document.getElementById("num2").value);
+                var x=x1%x2;
+                document.getElementById("res").value=x;
+              //   <!-- document.write("x1+x2"); -->
+      
+            }
+
+          </script>
+        
+    </body>
+</html>
